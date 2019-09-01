@@ -249,11 +249,23 @@
 
 	};
 
+	var resizeBg = function() {
+		var width = $(window).width();
+		var height = (width/1440) * 1699;
+		var bg = document.getElementById("page");
+		bg.style.minHeight = (height - 20) + "px";
+		bg.style.backgroundSize = width + "px" + " " + height + "px";
+	}
+
+	window.onresize = function() {
+		resizeBg();
+	};
+	
 	
 	$(function(){
 		mobileMenuOutsideClick();
-		offcanvasMenu();
-		burgerMenu();
+		//offcanvasMenu();
+		//burgerMenu();
 		contentWayPoint();
 		sliderMain();
 		dropdown();
@@ -261,6 +273,7 @@
 		loaderPage();
 		counterWayPoint();
 		fullHeight();
+		resizeBg();
 	});
 
 
