@@ -253,8 +253,15 @@
 		var width = $(window).width();
 		var height = (width/1440) * 1699;
 		var bg = document.getElementById("page");
+		var footer = document.getElementById("footer");
 		bg.style.minHeight = (height - 20) + "px";
 		bg.style.backgroundSize = width + "px" + " " + height + "px";
+		var bg = document.getElementById("page");
+		
+		var windowHeight = $(window).height();
+		if(windowHeight > height - 20) {
+			bg.style.height = windowHeight + "px";
+		}
 	}
 
 	window.onresize = function() {
