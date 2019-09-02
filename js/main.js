@@ -264,7 +264,7 @@
 	}
 
 	window.onresize = function() {
-		resizeBg();
+		//resizeBg();
 	};
 	
 	
@@ -279,7 +279,7 @@
 		//loaderPage();
 		//counterWayPoint();
 		//fullHeight();
-		resizeBg();
+		//resizeBg();
 	});
 
 
