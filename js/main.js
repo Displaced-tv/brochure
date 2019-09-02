@@ -275,7 +275,7 @@
 		//contentWayPoint();
 		//sliderMain();
 		//dropdown();
-		goToTop();
+		//goToTop();
 		//loaderPage();
 		//counterWayPoint();
 		//fullHeight();
