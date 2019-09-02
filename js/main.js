@@ -253,7 +253,6 @@
 		var width = $(window).width();
 		var height = (width/1440) * 1699;
 		var bg = document.getElementById("page");
-		var footer = document.getElementById("footer");
 		bg.style.minHeight = (height - 20) + "px";
 		bg.style.backgroundSize = width + "px" + " " + height + "px";
 		var bg = document.getElementById("page");
@@ -270,16 +269,16 @@
 	
 	
 	$(function(){
-		mobileMenuOutsideClick();
+		//mobileMenuOutsideClick();
 		//offcanvasMenu();
 		//burgerMenu();
-		contentWayPoint();
-		sliderMain();
-		dropdown();
+		//contentWayPoint();
+		//sliderMain();
+		//dropdown();
 		goToTop();
-		loaderPage();
-		counterWayPoint();
-		fullHeight();
+		//loaderPage();
+		//counterWayPoint();
+		//fullHeight();
 		resizeBg();
 	});
 
